@@ -7,7 +7,7 @@
 };
  
 struct node *head = NULL, *x, *y, *z;
- 
+int t=1;
 void ins_at_end();
 void del_at_beg();
 void traverse();
@@ -18,14 +18,17 @@ int main()
  
     printf("\n 1.Enqueue\n 2.Dequeue");
     printf("\n3.traverse ");
-    printf("\n0.Exit\n");
+    printf("\n0.Press 0 to Exit\n");
     do
     {
         printf("\n Enter your choice:");
         scanf("%d", &ch);
         switch(ch)
         {
-
+		case 0:
+			printf("Exit..Bye  bye");
+			exit(0);
+			break;
             case 1:
             	ins_at_end();
             	break;
@@ -75,13 +78,24 @@ void ins_at_end()
 	
 }
 void del_at_beg()
-{
-    if (head == NULL) 
+{    
+	if (head == NULL) 
         printf("\n List is empty");
-    else if(head->link==head){
+    
+	else if(head->link==head){
 	x=head;
+	
+	if(t==1){
 	printf("%d has been deleted !!!",x->data);
-	printf("\nList empty");}
+	printf("\nList is empty .. ");
+	t++;
+	}
+	
+	else{
+	printf("\nList empty");
+	}
+}
+	
 
     else
     {
