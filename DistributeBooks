@@ -1,0 +1,35 @@
+/*Problem Defintion
+Distribute Books
+https://world4tech.com/tcs-codevita-2019-first-pre-qualifier-round-question-1-distribute-books/
+*/
+
+import java.io.*; 
+public class Code
+{
+	static long mod=1000000007;
+	public static void main (String[] args) throws IOException 
+	{ 
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		long n=Long.parseLong(br.readLine());
+		System.out.println((Code.exchange(n))); 
+	
+	} 
+	static long exchange(long n) 
+	{ //My objective is to make no books appear in the similar position again.
+		long a[] = new long[(int)n + 1]; 
+	
+		a[0] = 1; 
+		a[1] = 0; 
+		a[2] = 1; 
+	//Implementation of Dynamic Programming to count the number of dearrangements.
+		for (long i = 3; i <= n; ++i) 
+			a[(int) i] = (int) ((i - 1)%mod * (a[(int) (i - 1)]%mod + 
+								a[(int) (i - 2)]%mod)); 
+		
+		return (a[(int) n]%mod); 
+	} 
+	 //https://en.wikipedia.org/wiki/Derangement#Counting_derangements(sources)
+
+} 
+
+
