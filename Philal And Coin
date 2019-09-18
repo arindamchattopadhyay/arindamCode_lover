@@ -31,7 +31,7 @@ public static void main(String args[])throws IOException
 	}
   //Similarly,{1,2,4} adding any numbers can fetch any integers from{1..5}.. Here both the count is 3. But execute it for n=20,25,30.
   //U'll notice the number of factors in the second case is less as expected.. and therefore we just need to find the minimum of the 
-  //counters and print our answer.
+  //counters and print our answer
 	for(int j=1;j<=a[x];j*=2)
 	{
 		sum1+=j;
