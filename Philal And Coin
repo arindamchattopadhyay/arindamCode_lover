@@ -40,7 +40,6 @@ For test case 2, N=5.
 According to Manish {$1, $2, $3, $4, $5} must be distributed.
 But as per Manisha only {$1, $2, $3} coins are enough to purchase any item ranging from $1 to $5. Hence minimum is 3. Likewise denominations could also be {$1, $2, $4}. Hence answer is still 3.
 
-Can some one please suggest me a correct approach to solve it?
 */
 import java.io.*;
 public class Philal {
