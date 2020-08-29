@@ -14,7 +14,7 @@ Prior sorting,
 we will get two arrays:- 
 arr1:- {1,2,7,5,3}
 arr2:- {12,9,11,13}
-So, there's no element in the 1st array greater than any element in the 2nd array.
+So, there's no element in the 1st array i.e greater than any element in the 2nd array.
 Now it's simple.
 Just a sort of each arrays and done by reducing the gap after each iteration.
 @author: Arindam Chattopadhay
