@@ -1,5 +1,6 @@
 # arindamCode_lover
-I'm a student.. !!!!
+while(1){
+learning;}
 
 Some basic coding problems that are prerequisite to solve some criticial competitive coding problem.
 Your suggestion will offer me a chance to improve my problem solving technique. I request each one of you to take a look at it and if you find some better ways to solve these problems,kindly contact me..
