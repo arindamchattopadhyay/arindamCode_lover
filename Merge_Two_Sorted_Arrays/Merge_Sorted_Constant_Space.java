@@ -60,6 +60,7 @@ public class Merge_Sorted_Constant_Space{
             } 
         }  
        
+       /*testing
        System.out.println("for arr1 :-- ");
       	for(int i=0;i<n;i++)
       		System.out.print(arr1[i]+" ");
@@ -68,7 +69,7 @@ public class Merge_Sorted_Constant_Space{
        System.out.println("for arr2 :-- ");
       	for(int i=0;i<m;i++)
       		System.out.print(arr2[i]+" ");
-      	System.out.println();
+      	System.out.println();*/
 
         for (int gap = nextGap(n); gap > 0; gap = nextGap(gap)) 
         {  
@@ -82,11 +83,11 @@ public class Merge_Sorted_Constant_Space{
                     arr1[i + gap] = temp; 
                 } 
         }  
-      	//Test1
+      	/*//Test1
       	System.out.println("for arr1 :-- ");
       	for(int i=0;i<n;i++)
       		System.out.print(arr1[i]+" ");
-       System.out.println();
+       System.out.println();*/
        
         for (int gap = nextGap(m); gap > 0;gap = nextGap(gap))  
         {  
@@ -101,10 +102,10 @@ public class Merge_Sorted_Constant_Space{
                     arr2[i + gap] = temp; 
                 } 
         }  
-        System.out.println("for arr2 :-- ");
+        /*System.out.println("for arr2 :-- ");
       	for(int i=0;i<m;i++)
       		System.out.print(arr2[i]+" ");
-      	System.out.println();
+      	System.out.println();*/
 
         for (int i = 0; i < n; i++)  
             System.out.print(arr1[i] + " ");  
