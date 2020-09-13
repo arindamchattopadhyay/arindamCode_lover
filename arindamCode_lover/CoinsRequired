@@ -1,0 +1,46 @@
+/*
+Coins Required
+Problem defintion
+https://world4tech.com/tcs-codevita-2019-first-pre-qualifier-round-question-4-coins-required/
+*/
+
+import java.io.*;
+public class Coin {
+public static void main(String args[])throws IOException{
+	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	Coin.cal(Integer.parseInt(br.readLine()));
+}
+static void cal(int n)
+{
+	int a,b,c,d,e,f,total;
+	if(n%20==0)
+	{
+		a=n/2;
+		b=a/2;
+		b=b-1;
+		c=b*2;
+		n=n-c;
+		d=n/5;
+		e=d*5;
+		n=n-e;
+		f=n;
+		total=b+d+f;
+		
+	}
+	
+	else {
+		a=n/2;
+		b=a/2;
+		c=b*2;
+		n=n-c;
+		d=n/5;
+		e=d*5;
+		n=n-e;
+		f=n;
+		total=b+d+f;
+		
+	}
+	System.out.println(total+" "+d+" "+b+" "+f);
+	
+}
+}
